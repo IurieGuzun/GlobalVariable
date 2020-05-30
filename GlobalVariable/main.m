@@ -17,8 +17,15 @@ int main(int argc, char * argv[]) {
     @autoreleasepool {
         
         NSLog (@"myVar = %i", myVar);
-
-       // displayit();
+        
+        displayit();
+        
+        myVar = myVar * 2;
+       
+        NSLog (@"myVar = %i", myVar);
+        
+        displayit();
+        
         // Setup code that might create autoreleased objects goes here.
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
